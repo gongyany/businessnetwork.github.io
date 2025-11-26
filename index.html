@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YU SPROUT - Mother and Baby Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4B7F52',
+                        secondary: '#7BA05B',
+                        light: '#E8F4E9',
+                        dark: '#2C5F2D'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            }
+            .bg-pattern {
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light bg-pattern min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-primary text-white py-10 px-4 md:px-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 text-shadow">YU SPROUT</h1>
+            <p class="text-xl md:text-2xl opacity-90">Mother and Baby Products</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-10 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Company Info Section -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- About Us -->
+                <section class="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg">
+                    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                        <i class="fa fa-info-circle mr-2"></i> About Us
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        10+ years in B2B mother & baby supply chain, based in Yiwu, China. Serving global wholesalers, 
+                        retailers, and brands. Clients cover Southeast Asia, the Middle East, Africa, Russia, etc. 
+                        — your stable bulk supply partner.
+                    </p>
+                </section>
+
+                <!-- Product Range -->
+                <section class="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg">
+                    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                        <i class="fa fa-shopping-basket mr-2"></i> Product Range
+                    </h2>
+                    <p class="text-gray-700 mb-4">One-stop bulk procurement (flexible MOQ):</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                            <span>Protection: Baby Mosquito Nets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                            <span>Bedding: Cooling Mats, Baby Nest Beds</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                            <span>Daily Care: Bibs, Bath Towels</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                            <span>Parenting Gear: Baby Carriers</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                            <span>And more: Baby cribs, baby blankets, etc.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Core Advantages -->
+                <section class="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg">
+                    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                        <i class="fa fa-star mr-2"></i> Core Advantages
+                    </h2>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-trophy text-secondary mt-1 mr-3 text-lg"></i>
+                            <span><strong>Factory-direct low prices</strong> - Sourcing directly from manufacturers eliminates middlemen costs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-trophy text-secondary mt-1 mr-3 text-lg"></i>
+                            <span><strong>Rich foreign trade experience</strong> - Over 10 years of expertise in international business</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-trophy text-secondary mt-1 mr-3 text-lg"></i>
+                            <span><strong>Custom designs</strong> - Accept customizations based on your artwork and specifications</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Contact Information -->
+                <section class="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg">
+                    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                        <i class="fa fa-handshake-o mr-2"></i> Contact Information
+                    </h2>
+                    <div class="space-y-4 text-gray-700">
+                        <div class="flex items-center">
+                            <i class="fa fa-user-circle text-secondary mr-3 text-xl"></i>
+                            <span><strong>Yelina Gove</strong></span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-map-marker text-secondary mr-3 text-xl"></i>
+                            <span>Yiwu, China</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-envelope text-secondary mr-3 text-xl"></i>
+                            <a href="mailto:gongyanyan2000@gmail.com" class="hover:text-primary transition">gongyanyan2000@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-globe text-secondary mr-3 text-xl"></i>
+                            <a href="https://canlunmuying.1688.com/page/index.html" target="_blank" class="hover:text-primary transition text-blue-600 underline">
+                                Visit our Alibaba Store <i class="fa fa-external-link ml-1 text-sm"></i>
+                            </a>
+                        </div>
+                        <p class="mt-4">For more information, visit our Alibaba store or our Yiwu offline store.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- QR Codes and Contact Section -->
+            <div class="space-y-8">
+                <!-- Product Images - Sliding Gallery -->
+                <section class="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg">
+                    <h2 class="text-xl font-bold text-primary mb-4 text-center">Featured Products</h2>
+                    <div class="relative">
+                        <!-- Slider Controls -->
+                        <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 bg-white/80 hover:bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10 transition-all">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        
+                        <div id="productSlider" class="overflow-x-auto scrollbar-hide pb-4">
+                            <div class="flex space-x-4 min-w-max px-2">
+                                <img src="https://picsum.photos/id/237/600/600" alt="Baby Mosquito Net" class="w-64 h-64 object-cover rounded shadow-sm hover:opacity-90 transition cursor-pointer">
+                                <img src="https://picsum.photos/id/238/600/600" alt="Baby Nest Bed" class="w-64 h-64 object-cover rounded shadow-sm hover:opacity-90 transition cursor-pointer">
+                                <img src="https://picsum.photos/id/239/600/600" alt="Baby Carrier" class="w-64 h-64 object-cover rounded shadow-sm hover:opacity-90 transition cursor-pointer">
+                                <img src="https://picsum.photos/id/240/600/600" alt="Baby Bedding" class="w-64 h-64 object-cover rounded shadow-sm hover:opacity-90 transition cursor-pointer">
+                                <img src="https://picsum.photos/id/241/600/600" alt="Baby Towel" class="w-64 h-64 object-cover rounded shadow-sm hover:opacity-90 transition cursor-pointer">
+                            </div>
+                        </div>
+                        
+                        <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 bg-white/80 hover:bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center shadow-md z-10 transition-all">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+
+
+                <!-- WhatsApp QR Code -->
+                <section class="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg">
+                    <h2 class="text-xl font-bold text-primary mb-4 text-center flex items-center justify-center">
+                        <i class="fa fa-whatsapp mr-2"></i> WhatsApp
+                    </h2>
+                    <div class="flex flex-col items-center">
+                        <div class="border-4 border-gray-100 rounded-lg p-3 bg-white shadow-md mb-3">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/1fe15eb1906f499aa920e4ec01a7103a.png~tplv-a9rns2rl98-24:720:720.png?rcl=20251126092849FE2FF0EE92711EF18BDA&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1764725329&x-signature=CdcRuxySPA0G%2BsrI8DkvGcqEyM8%3D" 
+                                 alt="WhatsApp QR Code" class="w-48 h-48 object-contain">
+                        </div>
+                        <p class="text-gray-700 text-center">
+                            <strong>Yelina</strong><br>
+                            WhatsApp Contact
+                        </p>
+                    </div>
+                </section>
+
+                <!-- WeChat QR Code -->
+                <section class="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg">
+                    <h2 class="text-xl font-bold text-primary mb-4 text-center flex items-center justify-center">
+                        <i class="fa fa-weixin mr-2"></i> WeChat
+                    </h2>
+                    <div class="flex flex-col items-center">
+                        <div class="border-4 border-gray-100 rounded-lg p-3 bg-white shadow-md mb-3">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b776d43637a945f6851f00864786d2fc.png~tplv-a9rns2rl98-24:720:720.png?rcl=20251126092849FE2FF0EE92711EF18BDA&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1764725329&x-signature=SeUMqI3gdINhrXriU2I2TALZfbw%3D"
+                                 alt="WeChat QR Code" class="w-48 h-48 object-contain">
+                        </div>
+                        <p class="text-gray-700 text-center">
+                            <strong>十水</strong><br>
+                            Zhejiang Jinhua
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-6 mt-10">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 YU SPROUT Mother and Baby Products. All rights reserved.</p>
+            <p class="mt-2 text-sm opacity-80">Based in Yiwu, China | Serving Global Clients</p>
+        </div>
+    </footer>
+
+    <!-- Animation and Slider Script -->
+    <script>
+        // Fade-in animation for sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            
+            const fadeInOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+            
+            const fadeInOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('opacity-100');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, fadeInOptions);
+            
+            sections.forEach(section => {
+                section.classList.add('transition', 'duration-700', 'opacity-0', 'translate-y-4');
+                fadeInOnScroll.observe(section);
+            });
+
+            // Product slider functionality
+            const slider = document.getElementById('productSlider');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideAmount = 300; // Pixels to scroll per button click
+
+            prevBtn.addEventListener('click', () => {
+                slider.scrollBy({ left: -slideAmount, behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                slider.scrollBy({ left: slideAmount, behavior: 'smooth' });
+            });
+
+            // Hide/show buttons based on scroll position
+            slider.addEventListener('scroll', () => {
+                // Show/hide previous button based on scroll position
+                if (slider.scrollLeft <= 50) {
+                    prevBtn.classList.add('opacity-0', 'pointer-events-none');
+                } else {
+                    prevBtn.classList.remove('opacity-0', 'pointer-events-none');
+                }
+
+                // Show/hide next button based on scroll position
+                if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth - 50) {
+                    nextBtn.classList.add('opacity-0', 'pointer-events-none');
+                } else {
+                    nextBtn.classList.remove('opacity-0', 'pointer-events-none');
+                }
+            });
+
+            // Initial check for button visibility
+            slider.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+</html>
